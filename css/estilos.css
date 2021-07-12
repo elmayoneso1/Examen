@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+
+  /* NAVBAR */
+.navbar {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navbar img {
+  width: 45px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  padding: 9px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.navbar img:hover {
+  background: #F5F5F5;
+}
+.icono-content {
+  position: absolute;
+  z-index: 11;
+  background: #F5F5F5;
+  margin-top: 15px;
+  border-radius: 30px;
+  text-align: center;
+  border-top-left-radius: 2px;
+}
+h3 {
+  color: #F5F5F5;
+  font-size: 23px;
+  font-weight: bold;
+}
+.nav-link {
+  color: #F5F5F5;
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  transform: scale(1.3);
+  color: #F5F5F5;
+}
+.form-control {
+  background: none;
+}    /* NAVBAR */
+
+/* CARRUSEL */
+
+
+/* CONTENIDO */
+.contenido {
+  background-image: url(../img/fondo-contenido.jpg);
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+}
+.cont-a {
+  margin-top: 30px;
+}
+.cont-a h1 {
+  font-weight:500;
+}
+.cont-a h1 span::before {
+  content: ' Las Plantas';
+  position: absolute;
+  animation: textoanimacion 7s linear infinite;
+}
+@keyframes textoanimacion {
+  0% {
+    content: ' Las Plantas';
+  }
+  10% {
+    margin-top: 30px;
+  }
+  20% {
+    opacity: -1;
+    margin-top: -30px;
+  }
+  30% {
+    margin-top:0;
+    content: ' Los Animales';
+    opacity: 1;
+  }
+  40% {
+    margin-top: 30px;
+  }
+  50% {
+    opacity: -1;
+    margin-top: -30px;
+  }
+  60% {
+    margin-top:0;
+    content: ' Todos';
+    opacity: 1;
+  }
+  70% {
+    margin-top: 30px;
+  }
+  80% {
+    opacity: -1;
+    margin-top: -30px;
+  }
+}
+.img1 {
+  float: left;
+  filter: grayscale(100%);
+  transition: 0.6s;
+  background: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 270px;
+  border-radius: 200px;
+}
+.img2, .img3 {
+  float: left;
+  margin-left: 10px;
+  filter: grayscale(100%);
+  transition: 0.6s;
+  background: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  width: 270px;
+  border-radius: 200px;
+}
+.img1:hover, .img2:hover, .img3:hover {
+  filter: grayscale(0%);
+  border-radius: 10px;
+}
+.cont-b p {
+  transition: 0.4s;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 15px;
+  filter: blur(5px);
+}
+.cont-b p:hover {
+  filter: blur(0px);
+} /* CONTENIDO */
+
+/* CONTENIDO 2 */
+.contenido2 {
+  background-image: url(../img/fondo-contenido2.png);
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+}
+.contenido2 h2 {
+  color: white;
+}
+.cont2-a .accordion, .accordion-item, .accordion-header, .accordion-button,.accordion-button:not(.collapsed){
+  background: none;
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background: #16a085;
+  color: black;
+}
+.circle-down, .arrow-right, .down-arrow {
+  margin-right: 7px;
+}
+.cont-a ul, li {
+  text-align: left;
+  text-decoration: none;
+}
+.accordion-body ul {
+  list-style: none;
+}
+.accordion-body a {
+  text-decoration: none;
+  color: #F5F5F5;
+  transition: 0.3s;
+  padding: 3px;
+}
+.accordion-body a:hover {
+  color: black;
+  background: #F5F5F5;
+}
+.cont2-c ul,.cont2-c li  {
+  text-align: center;
+  text-decoration: none;
+}
+.cont2-c li {
+  margin-top: 10px;
+}
+.cont2-c a {
+  text-decoration: none;
+  color: #E0E0E0;
+  transition: 0.4s;
+  padding: 10px;
+  background: none;
+  border-radius: 1px;
+}
+.cont2-c a:hover {
+  background: #8e44ad;
+  border-radius: 100px;
+}
+.cont2-a, .cont2-b, .cont2-c {
+  text-align: center;
+  align-items: center;
+}
+.cont2-b img {
+  width: 250px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 200px;
+}
+.img-bottom {
+  margin-bottom: 50px;
+}     /* CONTENIDO 2 */
+
+/* CONTENIDO 3 */
+.contenido3 {
+  background-image: url(../img/fondo-contenido3.jpg);
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  color: #F5F5F5;
+  border: none;
+  transition: 0.4s linear;
+}
+.card1:hover {
+  transform: rotateY(15deg);
+  box-shadow: -15px 0px 15px black;
+}
+.card2:hover {
+  transform: rotateX(15deg);
+  box-shadow: 0px -15px 15px black;
+}
+.card3:hover {
+  transform: rotateY(-15deg);
+  box-shadow: 15px 0px 15px black;
+}
+.card1 .btn-card {
+  border: 2px solid #8e44ad;
+  color: #8e44ad;
+}
+.card2 .btn-card {
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+}
+.card3 .btn-card {
+  border: 2px solid #27ae60;
+  color: #27ae60;
+}
+.card1 .btn-card:hover {
+  background: #8e44ad;
+  color: #F5F5F5;
+}
+.card2 .btn-card:hover {
+  background: #2c3e50;
+  color: #F5F5F5;
+}
+.card3 .btn-card:hover {
+  background: #27ae60;
+  color: #F5F5F5;
+}    /* CONTENIDO 3 */
+
+/* FOOTER */
+footer {
+  background-image: url(../img/footer-img.png);
+  background-size: auto;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+footer h1 {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a i {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+a i:hover {
+  color: #474787;
+}
+footer h1, footer a {
+  position: relative;
+  margin-bottom: 0;
+  top: 600px;
+  } /* FOOTER */
